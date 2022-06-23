@@ -1,0 +1,31 @@
+{
+    "name": "arvig/arvig-laravel",
+    "license": "MIT",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Arvig\\ArvigLaravel\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Arvig\\ArvigLaravel\\Tests\\": "tests"
+        }
+    },    
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:ArvigEnterprises/another-repo.git"
+        }
+    ],        
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Arvig\\ArvigLaravel\\ArvigLaravelServiceProvider"
+            ],
+            "aliases": {
+                "ArvigLaravel": "Arvig\\ArvigLaravel\\Facade"
+            }
+        }
+    }
+}
